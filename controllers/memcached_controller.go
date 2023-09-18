@@ -36,7 +36,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	cachev1alpha1 "github.com/kishinskiy/memcached-operator/api/v1alpha1"
+	cachev1alpha1 "github.com/Kishinskiy/memcached-operator/api/v1alpha1"
 )
 
 const memcachedFinalizer = "cache.example.com/finalizer"
