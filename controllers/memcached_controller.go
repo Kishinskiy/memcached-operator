@@ -40,7 +40,7 @@ import (
 	cachev1alpha1 "github.com/Kishinskiy/memcached-operator/api/v1alpha1"
 )
 
-const memcachedFinalizer = "cache.example.com/finalizer"
+const memcachedFinalizer = "cache.kishinskiy.com/finalizer"
 
 // Definitions to manage status conditions
 const (
@@ -404,7 +404,6 @@ func (r *MemcachedReconciler) deploymentForMemcached(
 			},
 		},
 	}
-
 	// Set the ownerRef for the Deployment
 	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/
 	if err := ctrl.SetControllerReference(memcached, dep, r.Scheme); err != nil {
